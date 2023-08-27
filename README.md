@@ -21,11 +21,32 @@ Information about users is stored in the MySQL database.
 
 ## Installation instructions
 
-- The program requires libraries: javax.swing, java.awt, java.awt.event.ActionEvent, java.awt.event.ActionListener, java.sql, java.sql.Connection, java.sql.DriverManager, java.sql.PreparedStatement, java.sql.Statement.
+- Run LoginForm.java and after that delete everything from .iml file and paste this text:
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager" inherit-compiler-output="true">
+    <exclude-output />
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$" isTestSource="false" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+          <library>
+            <CLASSES>
+              <root url="jar://$MODULE_DIR$/mysql-connector-j-8.1.0.jar!/" />
+            </CLASSES>
+            <JAVADOC />
+            <SOURCES />
+          </library>
+        </orderEntry>
+  </component>
+</module>  
 
 - Download MySQL
 
 - Create connection with the following settings: Connection Method Standard(TCP/IP), Hostname: `127.0.0.1`, Port: `3306`, Username: `root`, Password: `68ezonaT`
+  
 - Create database with name: `newdatabase`. In this database create Table with name: `newdatabase` with following settings: 
 
 ![TableSettings.png](docs/TabkeSettings.png)

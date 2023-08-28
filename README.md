@@ -20,6 +20,19 @@ Information about users is stored in the MySQL database.
 - Account information: After authentication user can check information about account
 
 ## Installation instructions
+
+- Run `LoginForm.java` file after that open .iml file and add this code  :
+```
+<orderEntry type="module-library">
+          <library>
+            <CLASSES>
+              <root url="jar://$MODULE_DIR$/mysql-connector-j-8.1.0.jar!/" />
+            </CLASSES>
+            <JAVADOC />
+            <SOURCES />
+          </library>
+        </orderEntry>
+```
   
 - Download MySQL
 
